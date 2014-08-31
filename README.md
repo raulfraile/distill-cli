@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/raulfraile/distill-cli/downloads.png)](https://packagist.org/packages/raulfraile/distill-cli)
 [![Latest Unstable Version](https://poser.pugx.org/raulfraile/distill-cli/v/unstable.png)](https://packagist.org/packages/raulfraile/distill-cli)
 
-`distill-cli` is a command line tool to extract files from compressed archives. It relies on the [raulfraile/distill]
+`distill-cli` is a command line tool to extract files from compressed archives. It relies on the [raulfraile/distill](https://github.com/raulfraile/distill)
 library to extract files from `bz2`, `gz`, `phar`, `rar`, `tar`, `tar.bz2`, `tar.gz`, `tar.xz`, `7z`, `xz`
 and `zip` archives.
 
@@ -13,20 +13,20 @@ and `zip` archives.
 
 ### Locally
 
-Download the distill-cli.phar file and store it somewhere on your computer.
+Download the [distill-cli.phar](https://github.com/raulfraile/distill-cli/raw/master/bin/distill-cli.phar) file and store it somewhere on your computer.
 
 ### Globally (manual)
 
 You can run these commands to easily access distill-cli from anywhere on your system:
 
 ```
-$ sudo wget http://get.sensiolabs.org/php-cs-fixer.phar -O /usr/local/bin/distill-cli
+$ sudo wget https://github.com/raulfraile/distill-cli/raw/master/bin/distill-cli.phar -O /usr/local/bin/distill-cli
 ```
 
 or with curl:
 
 ```
-$ sudo curl http://get.sensiolabs.org/php-cs-fixer.phar -o /usr/local/bin/distill-cli
+$ sudo curl https://github.com/raulfraile/distill-cli/raw/master/bin/distill-cli.phar -o /usr/local/bin/distill-cli
 ```
 
 then:
