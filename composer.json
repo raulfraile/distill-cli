@@ -1,0 +1,30 @@
+{
+    "name": "raulfraile/distill-cli",
+    "description": "Command line tool to extract files from compressed archives",
+    "keywords": [
+        "compression", "extractor", "zip", "gzip", "phar", "rar",
+        "tar.gz", "xz", "tar.xz", "bzip2", "bzip", "7zip"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raul Fraile",
+            "email": "raulfraile@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Distill\\": "src/" }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "raulfraile/distill": "v0.2",
+        "symfony/console": "~2.5"
+    },
+    "require-dev": {
+        "raulfraile/ladybug": "~1.0"
+    },
+    "bin": [
+        "distill-cli"
+    ],
+    "minimum-stability": "stable"
+}
