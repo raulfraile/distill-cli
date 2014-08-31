@@ -49,6 +49,18 @@ Then, make sure you have ~/.composer/vendor/bin in your PATH, and you're good to
 
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
+## Usage
+
+```
+$ distill-cli command file [target]
+```
+
+Example:
+
+```
+$ distill-cli extract archive.tar.gz path/
+```
+
 ## Credits
 
 * Raul Fraile ([@raulfraile](https://twitter.com/raulfraile))
