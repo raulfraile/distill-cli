@@ -20,13 +20,13 @@ Download the [distill-cli.phar](https://github.com/raulfraile/distill-cli/raw/ma
 You can run these commands to easily access distill-cli from anywhere on your system:
 
 ```
-$ sudo wget https://github.com/raulfraile/distill-cli/raw/master/bin/distill-cli.phar -O /usr/local/bin/distill-cli
+$ sudo wget https://raw.githubusercontent.com/raulfraile/distill-cli/master/bin/distill-cli.phar -O /usr/local/bin/distill-cli
 ```
 
 or with curl:
 
 ```
-$ sudo curl https://github.com/raulfraile/distill-cli/raw/master/bin/distill-cli.phar -o /usr/local/bin/distill-cli
+$ sudo curl https://raw.githubusercontent.com/raulfraile/distill-cli/master/bin/distill-cli.phar -o /usr/local/bin/distill-cli
 ```
 
 then:
