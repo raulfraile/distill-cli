@@ -38,6 +38,8 @@ class ExtractCommand extends Command
         $file = new File($input->getArgument('file'), $formatGuesser->guess($input->getArgument('file')));
 
         $extractor->extract($file, $input->getArgument('target'));
+
+        $output->
     }
 
 }
