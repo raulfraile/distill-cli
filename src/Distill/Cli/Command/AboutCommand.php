@@ -43,7 +43,6 @@ class AboutCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
         $output->writeln(sprintf("\n <info>Distill CLI</info> <comment>%s</comment>", $this->appVersion));
         $output->writeln(" ~~~~~~~~~~~~~~~~~~~~");
 
@@ -53,6 +52,8 @@ class AboutCommand extends Command
 
         $output->writeln("   <info>extract <dir-name></info>  Extracts files from compressed archives.");
         $output->writeln("                   Example: <comment>$ distill-cli extract example.tar.gz example/</comment>\n");
+
+        return 0;
     }
 
 }
