@@ -14,6 +14,23 @@ class ExtractCommand extends Command
 {
 
     /**
+     * App version.
+     * @var string
+     */
+    protected $appVersion;
+
+    /**
+     * Constructor.
+     * @param string $appVersion App version
+     */
+    public function __construct($appVersion)
+    {
+        parent::__construct();
+
+        $this->appVersion = $appVersion;
+    }
+
+    /**
      * {@inheritdoc}
      */
     protected function configure()
@@ -32,6 +49,10 @@ class ExtractCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
 
+        $output->writeln(sprintf("distill-cli %s by Raul Fraile.\n", $this->appVersion));
+
+        $output->write(sprintf("Uncompressing '%s' into '%s' ", $input->getArgument('file'), $input->getArgument('target')));
+
         $extractor = new Distill();
         $formatGuesser = new FormatGuesser();
 
@@ -39,7 +60,15 @@ class ExtractCommand extends Command
 
         $response = $extractor->extract($file, $input->getArgument('target'));
 
-        return true === $response ? 0 : 1;
+        if (true == $response) {
+            $output->writeln('[<info>OK</info>]');
+
+            return 0;
+        }
+
+        $output->writeln('<error>ERROR</error>');
+
+        return 1;
     }
 
 }

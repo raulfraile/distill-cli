@@ -10,7 +10,7 @@ $appVersion = '0.1';
 
 $app = new Application('Distill CLI', $appVersion);
 
-$app->add(new DistillCommand\ExtractCommand());
+$app->add(new DistillCommand\ExtractCommand($appVersion));
 $app->add(new DistillCommand\AboutCommand($appVersion));
 
 $app->setDefaultCommand('about');
