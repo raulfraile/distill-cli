@@ -62,12 +62,9 @@ class ExtractCommand extends Command
 
         $output->write(sprintf("Uncompressing '%s' into '%s' ", $input->getArgument('file'), $input->getArgument('target')));
 
-        $extractor = new Distill();
-        $formatGuesser = new FormatGuesser();
+        $distill = new Distill();
 
-        $file = new File($input->getArgument('file'), $formatGuesser->guess($input->getArgument('file')));
-
-        $response = $extractor->extract($file, $input->getArgument('target'));
+        $response = $distill->extract($input->getArgument('file'), $input->getArgument('target'));
 
         if (true == $response) {
             $output->writeln('[<info>OK</info>]');
