@@ -13,7 +13,7 @@ require_once 'phar://distill-cli.phar/vendor/autoload.php';
 use Symfony\Component\Console\Application;
 use Distill\Cli\Command as DistillCommand;
 
-$appVersion = '1.0.1';
+$appVersion = '1.0.2';
 
 $app = new Application('Distill CLI', $appVersion);
 
